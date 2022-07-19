@@ -4,5 +4,15 @@
         "ovning1.7",
         ".vscode",
         "programmeringsuppgifter2.13"
+    ],
+    "spellright.language": [
+        "en",
+        "sv"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "java"
     ]
 }
