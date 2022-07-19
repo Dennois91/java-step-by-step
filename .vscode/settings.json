@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
         "ovning2.8",
-        "java-step-by-step/ovning2.8",
-        ".vscode"
+        "ovning1.7",
+        ".vscode",
+        "programmeringsuppgifter2.13"
     ]
 }
