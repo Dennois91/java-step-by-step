@@ -13,6 +13,6 @@ class UppgiftIII {
 
         surname = surname.toUpperCase();
         
-        System.out.println("Hello " + surname);
+        System.out.println("Hello " + surname + " " + name);
     }  
 }
