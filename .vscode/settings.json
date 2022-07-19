@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "programmeringsuppgifter2.13",
         "ovning2.8",
         "ovning1.7",
         ".vscode",
-        "programmeringsuppgifter2.13"
+        "hello-java"
     ],
     "spellright.language": [
         "en",
