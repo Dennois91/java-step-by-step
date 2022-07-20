@@ -5,7 +5,7 @@ import javax.swing.text.html.StyleSheet;
 class Ovning {
     public static void main(String[] args) {
         
-        double costD, vatD, vat, cost;
+        double costAfterVAT, vatDecimal, vat, cost;
         try (var scan = new Scanner(System.in)) {
             System.out.println("Enter cost of item:"); 
             cost = scan.nextInt(); //scan.nextLine();
@@ -13,15 +13,11 @@ class Ovning {
             vat = scan.nextInt();
         }
 
-        vatD = vat / 100;
-        costD = cost * vatD;
-        costD = cost - costD;
-       
+        vatDecimal = vat / 100;
 
-        System.out.println("Price: " + cost + "\nPrice excl VAT: " + costD);
+        costAfterVAT = cost * vatDecimal;
+        costAfterVAT = cost - costAfterVAT;
 
-        
+        System.out.println("Price: " + cost + "\nPrice excl VAT: " + costAfterVAT);
     }
-    
 }
-//Läs in varas pris inkl. Moms. Fråga vad momssatsen är skriv ut pris med och utan moms.
