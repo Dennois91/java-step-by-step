@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.text.html.StyleSheet;
-
 class Ovning {
     public static void main(String[] args) {
         
