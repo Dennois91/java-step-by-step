@@ -20,5 +20,6 @@ class Ovning {
         System.out.println(vat + " Is the cost of the VAT");
         System.out.println(priceExclVat + " Cost without VAT");
 
+
     }
 }
