@@ -1,21 +1,24 @@
-import java.util.Scanner;
-
+import javax.swing.*;
 class Ovning {
     public static void main(String[] args) {
-        
-        double costAfterVAT, vatDecimal, vat, cost;
-        try (var scan = new Scanner(System.in)) {
-            System.out.println("Enter cost of item:"); 
-            cost = scan.nextInt(); //scan.nextLine();
-            System.out.println("Enter VAT %");   
-            vat = scan.nextInt();
-        }
 
-        vatDecimal = vat / 100;
+        double price, vat, priceExclVat;
+        String inputItem, inputVat;
 
-        costAfterVAT = cost * vatDecimal;
-        costAfterVAT = cost - costAfterVAT;
+        inputItem = JOptionPane.showInputDialog("Price of item");
+        inputItem = inputItem.replace(",", ".");
+        price = Double.parseDouble(inputItem);
 
-        System.out.println("Price: " + cost + "\nPrice excl VAT: " + costAfterVAT);
+        inputVat = JOptionPane.showInputDialog("Enter value of VAT");
+        inputVat = inputVat.replace(",", ".");
+        vat = Double.parseDouble(inputVat);
+
+        vat = vat / 100;
+        vat = price * vat;
+        priceExclVat = price - vat;
+
+        System.out.println(vat + " Is the cost of the VAT");
+        System.out.println(priceExclVat + " Cost without VAT");
+
     }
 }
