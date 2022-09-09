@@ -28,6 +28,3 @@ public class Main {
         outputToFile.close();
     }
 }
-
-
-// Scanner file = new Scanner(new File("data.txt"));
