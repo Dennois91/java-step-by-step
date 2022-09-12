@@ -12,18 +12,18 @@ public class Main {
             System.out.println("Write one number");
             intArray[counter] = scan.nextInt();
             counter++;
-
         }
-        for (int i = 0; i < counter; i++) {
+        printUniqueValuesInArray(intArray, counter);
+    }
 
+    static void printUniqueValuesInArray(int[] array, int length) {
+        for (int i = 0; i < length; i++) {
             int j;
             for (j = 0; j < i; j++)
                 //If value is same prior in the array
-                if (intArray[i] == intArray[j])
-                    break;
+                if (array[i] == array[j]) break;
             //If same value was not found previous in array.
-            if (i == j)
-                System.out.print(intArray[i] + " ");
+            if (i == j) System.out.print(array[i] + " ");
         }
     }
 }
