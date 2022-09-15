@@ -51,7 +51,6 @@ public class Dice {
     }
 }
 
-
 //1. Den första metoden har som uppgift att skapa 1000 slumpmässiga tal mellan 1 och 6.
 //Metoden skapar en textfil som innehåller alla tal i följd t.ex. 4 5 6 3 5 2 3 6 2 4 ….
 //Kalla metoden createFile()

@@ -16,7 +16,6 @@ static BufferedReader reader = null;
     }
 }
 
-
 //Metoden ska beräkna hur många tecken som finns i filen. Med tecken så menas ALLTING
 //som finns i filen, oavsett om det är siffror, matematiska operationer, symboler eller
 //bokstäver. Varje TECKEN ska räknas
