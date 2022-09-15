@@ -1,0 +1,20 @@
+{
+    "java.project.sourcePaths": [
+        "programmeringsuppgifter2.13",
+        "ovning2.8",
+        "ovning1.7",
+        "hello-java",
+        ".vscode",
+        "ovning3.6"
+    ],
+    "spellright.language": [
+        "en",
+        "sv"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "java"
+    ]
+}

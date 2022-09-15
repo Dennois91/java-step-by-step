@@ -1,0 +1,4 @@
+kallep 15 30 50
+elsab 10 80 45 75
+lisapelle 44 98 20 15 30 50
+Arthas 5 10 15
