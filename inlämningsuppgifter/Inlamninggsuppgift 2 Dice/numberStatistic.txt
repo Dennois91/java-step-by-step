@@ -1,0 +1,6 @@
+1 was counted: 146 times
+2 was counted: 168 times
+3 was counted: 162 times
+4 was counted: 164 times
+5 was counted: 182 times
+6 was counted: 178 times

@@ -23,6 +23,7 @@ public class Main {
             printToFile.println(frequencyString[i]);
             printToFile.close();
         }
-
+        System.out.print("Number of characters contained in file data.txt is: ");
+        FileAnalyzer.charCounter();
     }
 }
