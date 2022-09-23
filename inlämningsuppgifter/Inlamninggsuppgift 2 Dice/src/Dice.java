@@ -31,7 +31,8 @@ public class Dice {
         return array;
     }
 
-    public static int[] analyseArray(int[] randomArray) {
+    public static String[] analyseArray(int[] randomArray) {
+        String[] stringArray = new String[6];
         Arrays.sort(randomArray);
         int[] frequencyArray = new int[randomArray.length];
         int counted = -1;
@@ -47,9 +48,26 @@ public class Dice {
                 frequencyArray[i] = count;
             }
         }
-        return frequencyArray;
+        int counter = 0;
+        for (int i = 0; i < frequencyArray.length; i++) {
+            if (frequencyArray[i] != -1) {
+
+                stringArray[counter] = (randomArray[i] + " was counted: " + frequencyArray[i] + " times");
+                counter++;
+
+            }
+        }
+        return stringArray;
     }
 }
+
+// for (int i = 0; i < frequency.length; i++) {
+//            if (frequency[i] != -1) {
+//                System.out.println(randomNumbers[i] + " was counted: " + frequency[i] + " times");
+//                PrintWriter printer = new PrintWriter(new BufferedWriter
+//                        (new FileWriter("numberStatistic.txt", true)));
+//                printer.println(randomNumbers[i] + " was counted: " + frequency[i] + " times");
+//                printer.close();
 
 //1. Den första metoden har som uppgift att skapa 1000 slumpmässiga tal mellan 1 och 6.
 //Metoden skapar en textfil som innehåller alla tal i följd t.ex. 4 5 6 3 5 2 3 6 2 4 ….
